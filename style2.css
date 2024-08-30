@@ -1,0 +1,648 @@
+:root {
+    --utama: ;
+    --font: rgb(211, 183, 21);
+    --background: #1D1403;
+  }
+  *, html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+  }
+  
+  nav {
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 3px solid var(--font);
+    border-radius: 15px;
+    margin: 5px;
+  }
+  nav ul {
+    list-style: none;
+    align-items: center;
+  }
+  nav ul li a {
+     text-decoration: none;
+     color: rgb(255, 253, 253);
+     padding-left: 10px;
+     padding-right: 10px;
+     border-bottom: 1px solid transparent ;
+     transition: all;
+     transition-duration: 1s;
+  }
+  
+  nav ul li :hover {
+     color: var(--font);
+     border-bottom: 2px solid var(--font);
+     padding-bottom: 3px;
+  }
+  
+  
+  .merek .logo {
+    color: var(--font);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all;
+    transition-duration: 1s;
+  }
+  
+  .merek:hover .logo{
+    transform: scale(2);
+  }
+  
+  .merek span {
+      color: rgb(211, 183, 21);
+  }
+  
+  .container-home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    background-image: url('background.jpg');
+    background-size: cover;
+  }
+  
+  
+  .content {
+    margin-left: 75px;
+  }
+  
+  .content .logo a  {
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--font);
+    border: 1px solid var(--font);
+    transition: all 300ms;
+  }
+
+  .content .logo a:hover {
+    transform: scale(0.8);
+  }
+  
+  .content h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+    color: var(--font);
+  }
+  
+  .content h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: var(--font);
+    
+  }
+  
+  .content p{
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .link {
+    display: flex;
+    gap: 1rem;
+    transition: all;
+    transition-duration: 1s;
+  }
+  
+  .link a {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: var(--background);
+    text-decoration: none;
+    padding: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+  
+  .link .contact {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: var(--font);
+    transition: all 1s;
+  }
+  
+  .link .contact:hover {
+    color: dimgray;
+    transform: scale(1.1);
+  }
+  
+  .link .follow {
+    transition: all 1s;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: var(--background);
+    border: 3px solid var(--font);
+  }
+  
+  .link .follow a {
+    color: var(--font);
+  }
+  .link .follow:hover {
+    color: dimgray;
+    transform: scale(1.1);
+  }
+  
+  .container-about {
+    min-height: 100vh;
+    background-color: var(--background);
+  }
+   
+  .foto-about img {
+    max-width: 250px;
+    border-radius: 100%;
+    border: 3px solid var(--font);
+    box-shadow: 1px 1px 20px var(--font);
+  }
+  
+  .judul-about h2 {
+    color: var(--font);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    padding-top: 200px;
+  }
+  
+  .container-about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 80px;
+  }
+  
+  .container-about .content p {
+    max-width: 800px;
+  }
+  
+  .container-about .content p {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(249, 249, 249, 0.864);
+    font-size: 15px;
+  }
+  
+  
+  .container-pend {
+    min-height: 80vh;
+    background-color: var(--background);
+    padding-bottom: 200px;
+    padding-top: 40px;
+  }
+  
+  .container-pend .content-pend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .container-pend h2 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: var(--font);
+    padding-bottom: 40px;
+  }
+  .card {
+    margin-top: 5px;
+    background-color: var(--background);
+    box-sizing: border-box;
+    border: 3px solid var(--font);
+    max-width: 200px;
+    text-align: center;
+    transition: all 1s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .card-smpn {
+    max-width: 150px;
+  }
+  
+  .content-card {
+    padding: 10px;
+    background-color: var(--background);
+  }
+  
+  header img {
+    height: 150px;
+    max-width: 200px;
+  }
+  
+  h3 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--font);
+  }
+  
+  .card p {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2px;
+    color: var(--font);
+  }
+
+  .container-footer {
+    background-color: var(--background);
+    border-top: 3px solid var(--font);
+    max-height: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 10px;
+    padding-top: px;
+    color: var(--font);
+  }
+  
+  .container-footer .contact-us h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .container-footer .list h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .container-footer .media-sosial h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us p {
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+   
+  }
+  
+  .list ul {
+    list-style: none;
+  }
+  
+  .list ul li a {
+    color: var(--font);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    transition: all;
+    transition-duration: 1.5s;
+    border-bottom: 2px transparent;
+  }
+  
+  .list ul li a:hover {
+    color: var(--font);
+    border-bottom: 2px solid var(--font);
+  }
+  
+  .media-sosial .foto a {
+    color: var(--font);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all;
+    transition-duration: 1s;
+  }
+
+  .media-sosial .foto a:hover {
+    transform: scale(0.8);
+  }
+  
+  .copy p {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: var(--font);
+    padding-left: 50px;
+  }
+  
+  /*Keyframes*/
+  
+  
+  /*responsive*/
+  /*dekstop*/
+  @media (max-width:1366px) {
+    html {
+      font-size: 75%;
+    } 
+    
+    .container-home .content h2 {
+      font-size: 25px;
+    }
+  
+    .container-home .content h1 {
+      font-size: 30px;
+    }
+  
+    .container-home .content p {
+      font-size: 20px;
+    }
+  
+    .card {
+      max-width: 200px;
+    }
+  
+    header img {
+      max-width: 200px;
+    }
+
+    .container-pend .judul h2 {
+      padding-top: 50px;
+
+    }
+  
+  
+  }
+  
+  /*tablet*/
+  @media (max-width:768px) {
+    html {
+      font-size: 60%;
+    }
+
+    .container-home .content {
+      margin-left: 20px;
+    }
+  
+    .container-home .content h2 {
+      font-size: 25px;
+    }
+  
+    .container-home .content h1 {
+      font-size: 30px;
+    }
+  
+    .container-home .content p {
+      font-size: 15px;
+    }
+  
+    .container-home .content .link a {
+      font-size: 10px;
+    }
+    .container-about {
+      padding-top: 100px;
+    }
+
+    .container-about .judul-about h2 {
+      padding-top: 0px;
+    }
+    .container-about .content {
+      display: flex;
+      gap: 1rem;
+      padding-left: 30px;
+      padding-right: 20px;
+      margin-left: 0;
+      font-size: 10px;
+      padding-top: 20px;
+    }
+    .container-about .judul-about h2 {
+      font-size: 25px;
+    }
+
+    .container-about .content p {
+      font-size: 13px;
+    }
+  
+    .content-dua .link {
+      font-size: 10px;
+    }
+  
+    .container-pend {
+      max-height: 800px;
+    }
+  
+  
+    .container-about .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container-pend {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .container-pend .judul h2 {
+      padding-top: 40px;
+    }
+    .card {
+      max-width: 105px;
+    }
+  
+    header img {
+      max-width: 100px;
+    }
+  }
+  
+  /*phone*/
+  @media (max-width:450px) {
+    html {
+      font-size: 40%;
+    }
+    .merek .logo{
+      font-size: 10px;
+  
+    }
+
+    .container-home .content {
+       padding-left: 20px;
+       margin-left: 0;
+    }
+
+    .container-home .content p {
+      font-size: 10px;
+    }
+    .container-dua {
+  
+      max-width: 1200px;
+    }
+    .content-dua {
+      max-width: 1200px;
+    }
+    
+    .content-dua h2 {
+      font-size: 10px;
+    }
+  
+    .content-dua h1 {
+      font-size: 15px;
+    }
+  
+    .link {
+      font-size: 6px;
+      padding-top: 4px;
+    }
+  
+    .wa {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    .follow {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    nav  {
+      padding: 10px;
+    }
+  
+    nav ul li a{
+      padding-left: 0px;
+      padding-right: 2px;
+  
+    }
+  
+  
+    .container-about .content .foto-about img {
+       max-width: 200px;
+    }
+
+    .container-about .content {
+      padding-left: 20px;
+      margin-left: 0px;
+    }
+  
+  }
+  
+  @media (max-width:450px) {
+  
+    html {
+      font-size: 40%;
+    }
+  
+    .container-home .content h2 {
+      font-size: 15px;
+    }
+  
+    .container-home .content h1 {
+      font-size: 20px;
+    }
+  
+    .container-home .content p {
+      font-size: 10px;
+    }
+  
+    .container-dua {
+      max-width: 1200px;
+    
+    }
+    
+    .content-dua {
+      max-width: 1200px;
+      
+    }
+    .content-dua h2 {
+      font-size: 10px;
+    }
+  
+    .content-dua h1 {
+      font-size: 15px;
+    }
+  
+    .link {
+      font-size: 10px;
+    }
+    nav  {
+  
+      padding: 10px;
+    }
+  
+    nav ul li a{
+      padding-left: 0px;
+      padding-right: 2px;
+  
+    }
+  
+    .container-about .content p {
+      font-size: 10px;
+    }
+  
+    .content-about .isi {
+      margin: 0px;
+    }
+  
+     .container-about .content-about h2 {
+      font-size: 20px;
+    }
+  
+    .container-pend .content-pend {
+      margin: auto;
+    }
+    
+    .judul {
+      text-align: justify;
+    }
+  
+    
+  }
+  
+  @media (max-width: 350px) {
+    .fotoprofil img {
+      margin-left: 20px;
+    }
+    
+    .content-dua {
+      margin-left: 10px;
+    }
+    
+    .container-about .isi {
+      font-size: 10%;
+  
+    }
+    
+    .content-pend {
+    
+    }
+  
+    .judul {
+      margin-left: 20px;
+    }
+  
+  }
+  
+  
